@@ -37,7 +37,7 @@ module div_by_3(
  always@(posedge clk or negedge rst_n) begin 
     if (!rst_n) begin 
         pr_state  <= 2'b00;
-        nxt_state <= 2'b00;
+        //nxt_state <= 2'b00; // Unsupported: Blocked and non-blocking assignments to same variable: 'div_by_three.nxt_state'
 
     end
 
